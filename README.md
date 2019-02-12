@@ -32,7 +32,7 @@ Provides anything you need to run [Lua](https://lua.org) ([Fengari](https://feng
 <body>
   <script type="text/lua" src="path/to/your/file.lua"></script>
   
-  <!-- Do not use `async` attribute for Lua files -->
+  <!-- Do not use `async` attribute for Lua files (WIP) -->
   
   <!-- Its recommended to use only local Lua files. However, for remote Lua files
        you must to include Access-Control-Allow-Origin header on requested resource.
