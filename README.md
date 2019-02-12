@@ -8,7 +8,7 @@ Provides anything you need to run [Lua](https://lua.org) ([Fengari](https://feng
 
 ### Download
 
-[Download zip](https://github.com/olueiro/fengari-phonegap-helloworld/archive/master.zip) and extract it into your PhoneGap project
+[Download zip](https://github.com/olueiro/fengari-phonegap-helloworld/archive/master.zip) and extract it into `www` folder in your PhoneGap project.
 
 ### How to use
 
