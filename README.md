@@ -4,9 +4,9 @@
 [![#fengari on Freenode](https://img.shields.io/Freenode/%23fengari.png)](https://webchat.freenode.net/?channels=fengari)
 
 
-# fengari-web
+# fengari-phonegap
 
-Provides anything you need to run [Fengari](https://fengari.io) in the browser.
+Provides anything you need to run [Fengari](https://fengari.io) in [PhoneGap](https://phonegap.com/).
 
 ## Getting started
 
