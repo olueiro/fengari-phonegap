@@ -55,7 +55,7 @@ Copyright © 2017 Benoit Giannangeli
 
 Copyright © 2017-2018 Daurnimator
 
-Copyright © 2017-2018 olueiro
+Copyright © 2019 olueiro
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
