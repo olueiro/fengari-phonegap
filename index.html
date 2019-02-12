@@ -48,13 +48,24 @@
         <div id="deviceready" class="blink">
             <p class="event listening">Connecting to Device</p>
             <p class="event received">Device is Ready</p>
+            <p id="hello-from-lua"></p>
         </div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/fengari-phonegap.min.js"></script>
 
-    <script type="application/lua" src="lua/index.lua"></script>
-    <script type="application/lua" src="lua/main.lua" async></script>
+    <script type="text/lua" src="lua/index.lua"></script>
+    <script type="text/lua" src="lua/main.lua"></script>
+    
+    <script type="text/lua">
+        local js = require("js")
+        local global = js.global
+        
+        -- add your inline Lua code here...
+        
+        -- e.g.        
+        global.document:getElementById("hello-from-lua").innerHTML = "Hello World from Lua"
+    </script>
 </body>
 
 </html>
