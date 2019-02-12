@@ -6,8 +6,6 @@
 
 Provides anything you need to run [Lua](https://lua.org) ([Fengari](https://fengari.io)) in [PhoneGap](https://phonegap.com/).
 
-## Getting started
-
 ### Download
 
 [Download zip](https://github.com/olueiro/fengari-phonegap-helloworld/archive/master.zip) and extract it into your PhoneGap project
