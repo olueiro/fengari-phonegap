@@ -179,13 +179,13 @@ if (typeof document !== 'undefined' && document instanceof HTMLDocument) {
 			}
 			lua_pop(L, 1);
 			if (window.dispatchEvent(e)) {
-				console.error("uncaught exception", e.error);
+				console.error("uncaught exception: " + e.error);
 			}
 		}
 	};
 
 	const process_xhr_response = function(xhr, tag, chunkname) {
-		if (xhr.status >= 200 && xhr.status < 300) {
+		if (xhr.status == 0 || (xhr.status >= 200 && xhr.status < 300)) {
 			let code = xhr.response;
 			if (typeof code === "string") {
 				code = to_luastring(xhr.response);
