@@ -21,7 +21,9 @@ There are any modifications over Fengari core.
 MIT License
 
 Copyright © 2017 Benoit Giannangeli
+
 Copyright © 2017-2018 Daurnimator
+
 Copyright © 2017-2018 olueiro
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
