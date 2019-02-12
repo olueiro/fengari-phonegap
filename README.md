@@ -16,7 +16,7 @@ Provides anything you need to run [Lua](https://lua.org) ([Fengari](https://feng
 ```html
 <body>
   <script type="text/lua">
-    local js = require("js") --// javascript main object
+    local js = require("js") --// require javascript main object
     local global = js.global --// global javascript object (global.document, global.window etc)
 
     local window = global.window
