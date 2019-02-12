@@ -10,77 +10,35 @@ Provides anything you need to run [Lua](https://lua.org) ([Fengari](https://feng
 
 ### Download
 
-Visit the [GitHub releases page](https://github.com/fengari-lua/fengari-web/releases) and get the latest version.
+[Download zip](https://github.com/olueiro/fengari-phonegap-helloworld/archive/master.zip) and extract it into your PhoneGap project
 
-Alternatively you can [Build](#Building) fengari-web yourself.
+### Notes
 
+This project adds a WeakMap polyfill provided by [es6-map-shim](https://github.com/eriwen/es6-map-shim/blob/master/es6-map-shim.js).
+There are any modifications over Fengari core.
 
-### Directly
+### License
 
-Load fengari-web in your web page:
+MIT License
 
-```html
-<script src="fengari-web.js" type="text/javascript"></script>
-```
+Copyright © 2017 Benoit Giannangeli
+Copyright © 2017-2018 Daurnimator
+Copyright © 2017-2018 olueiro
 
-Now any script of type `application/lua` will be run by fengari:
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-```html
-<script type="application/lua">
-print("Hello World!")
-</script>
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-<script src="/my-script.lua" type="application/lua" async></script>
-```
-
-Note that if you use a `src` attribute, it is strongly recommended for it to be [`async`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attr-async).
-
-
-### With build process
-
-See [fengari-loader](https://github.com/fengari-lua/fengari-loader/)
-
-
-## Compatibility
-
-fengari-web should work in all modern browsers.
-
-Verified to work in:
-
-  - Chrome >= 38
-  - Firefox >= 19
-  - Safari >= 8
-  - Microsoft IE 11
-  - Microsoft Edge
-
-
-## API
-
-As well as running `<script type="application/lua">` tags, fengari-web creates a `fengari` global that contains the [core `fengari` API](https://github.com/fengari-lua/fengari#the-js-api) supplemented with:
-
-  - `L`: the main `lua_State` (in which script tags are run)
-  - `interop`: containing the [fengari-interop](https://github.com/fengari-lua/fengari-interop) library
-  - `load(source, chunkname)`: a function that loads the lua code in `source` with the optional chunk name `chunkname` and returns it as a function.
-    This function can be used to programmatically run lua code in the main `lua_State` from JavaScript. e.g.
-    ```js
-    console.log(fengari.load('return 1+1')())
-    ```
-
-
-## Building
-
-```bash
-git clone https://github.com/fengari-lua/fengari-web.git
-npm install
-```
-
-This should automatically kick off the build process.
-The built files can then be found in the `dist/` directory.
-
-If you need to rebuild, run
-
-```bash
-npm run build
-```
-
-Or [use `webpack` directly](https://webpack.js.org/api/cli/).
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
