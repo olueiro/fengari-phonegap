@@ -15,6 +15,7 @@ Provides anything you need to run [Lua](https://lua.org) ([Fengari](https://feng
 ### Notes
 
 This project adds a WeakMap polyfill provided by [es6-map-shim](https://github.com/eriwen/es6-map-shim/blob/master/es6-map-shim.js).
+
 There are any modifications over Fengari core.
 
 ### License
