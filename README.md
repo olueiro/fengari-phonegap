@@ -16,12 +16,12 @@ Provides anything you need to run [Lua](https://lua.org) ([Fengari](https://feng
 ```html
 <body>
   <script type="text/lua">
-    local js = require("js")
-    local global = js.global
+    local js = require("js") -- javascript main object
+    local global = js.global -- global javascript object (global.document, global.window etc)
 
     local window = global.window
 
-    window:alert("Hello World from Lua!")
+    window:alert("Hello World from Lua!") -- use semi-colon to call javascript methods
 
     -- add your code here...
   </script>
