@@ -10,6 +10,31 @@ Provides anything you need to run [Lua](https://lua.org) ([Fengari](https://feng
 
 [Download zip](https://github.com/olueiro/fengari-phonegap-helloworld/archive/master.zip) and extract it into your PhoneGap project
 
+### How to use
+
+#### inline Lua code:
+```html
+<body>
+  <script type="text/lua">
+    local js = require("js")
+    local global = js.global
+
+    local window = global.window
+
+    window:alert("Hello World from Lua!")
+
+    -- add your code here...
+  </script>
+</body>
+```
+#### external Lua file:
+```html
+<body>
+  <script type="text/lua" src="path/to/your/file.lua"></script>
+  <!-- Do not use `async` attribute for Lua files -->
+</body>
+```
+
 ### Notes
 
 This project adds a WeakMap polyfill provided by [es6-map-shim](https://github.com/eriwen/es6-map-shim/blob/master/es6-map-shim.js).
